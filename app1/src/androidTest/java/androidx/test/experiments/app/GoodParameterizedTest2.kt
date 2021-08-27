@@ -13,7 +13,7 @@ import org.junit.runners.Parameterized
  * which contains `{0}`, `{1}` etc.
  *
  * The difference between this class and the [BadParameterizedTest] class
- * is that none of the parameters in this class is an value.
+ * is that none of the parameters in this class is an enum value.
  */
 @RunWith(Parameterized::class)
 class GoodParameterizedTest2(private val input1: Int,

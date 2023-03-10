@@ -6,8 +6,8 @@ import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 
 /**
- * This test class runs successfully when run without the Android Test Orchestrator
- * but fails when run with the Android Test Orchestrator.
+ * This test class runs successfully when run without Android Test Orchestrator
+ * but fails when run with Android Test Orchestrator.
  *
  * It appears that if any of the parameters returned by the [data] method
  * (which is marked with the [Parameterized.Parameters] annotation)

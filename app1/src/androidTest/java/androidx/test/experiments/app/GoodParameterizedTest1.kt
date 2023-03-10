@@ -1,6 +1,5 @@
 package androidx.test.experiments.app
 
-import androidx.test.experiments.app.GoodParameterizedTest1.Companion.data
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -9,8 +8,8 @@ import org.junit.runners.Parameterized
 /**
  * This test class runs successfully when run with and without Android Test Orchestrator.
  *
- * The only difference between this class and the [BadParameterizedTest] class is the [data] method
- * which is marked with the [Parameterized.Parameters] annotation.
+ * The only difference between this class and the [BadParameterizedTest] class
+ * is the [data] method in each of the two classes.
  * The [data] method in this class does not specify a [Parameterized.Parameters.name] pattern
  * and therefore takes the default pattern of `"{index}"`.
  */

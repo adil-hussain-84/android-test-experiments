@@ -1,18 +1,16 @@
 package androidx.test.experiments.app
 
-import androidx.test.experiments.app.GoodParameterizedTest2.Companion.data
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 
 /**
- * This test class runs successfully when run with Android Test Orchestrator
- * despite the [data] method in this class specifying a [Parameterized.Parameters.name] pattern
- * which contains `{0}`, `{1}` etc.
+ * This test class runs successfully when run with and without Android Test Orchestrator.
  *
  * The difference between this class and the [BadParameterizedTest] class
  * is that none of the parameters in this class is an enum value.
+ * The two classes are otherwise similar.
  */
 @RunWith(Parameterized::class)
 class GoodParameterizedTest2(private val input1: Int,

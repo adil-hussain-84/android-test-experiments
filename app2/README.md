@@ -12,4 +12,4 @@ I have observed this behaviour in the following environments:
 
 1. Android Studio Electric Eel (2022.1.1 Patch 2) running on macOS Ventura 13.1.
 2. Android Studio Electric Dolphin (2021.3.1 Patch 1) running on macOS Ventura 13.1.
-
+3. Android Studio Electric Dolphin (2021.3.1 Patch 1) running on macOS Monterey 12.6.3.

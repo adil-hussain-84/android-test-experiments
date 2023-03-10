@@ -39,7 +39,7 @@ dependencies {
     // NOTE 1: The mere presence of the 'fragment-testing' dependency causes the 'connectedDebugAndroidTest' Gradle task to hang indefinitely
     // NOTE 2: Comment out the 'fragment-testing' dependency and then run the 'connectedDebugAndroidTest' Gradle task. You'll see it runs to completion perfectly fine.
     // NOTE 3: The 'fragment-testing' library exists as an implementation (i.e. non-test) dependency because that's a requirement of the library. See the following issue for more information: https://issuetracker.google.com/issues/128612536
-//    debugImplementation 'androidx.fragment:fragment-testing:1.5.5'
+    debugImplementation 'androidx.fragment:fragment-testing:1.5.5'
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'

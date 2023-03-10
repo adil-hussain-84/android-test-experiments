@@ -6,12 +6,14 @@ import org.junit.runner.RunWith
 import org.junit.runners.Parameterized
 
 /**
- * This test class runs successfully when run without Android Test Orchestrator
- * but fails when run with Android Test Orchestrator.
+ * This test class runs successfully with Android Test Orchestrator
+ * as long as version 3.5.1 (or later) of the 'androidx.test.espresso:espresso-core' library
+ * and version 1.4.2 (or later) of the 'androidx.test:orchestrator' library is used.
  *
- * It appears that if any of the parameters returned by the [data] method
- * (which is marked with the [Parameterized.Parameters] annotation)
- * is an enum value, then `{0}`, `{1}` etc can't be used in the [Parameterized.Parameters.name] pattern.
+ * Earlier versions of the 'androidx.test.espresso:espresso-core' and 'androidx.test:orchestrator' libraries
+ * struggled to cope with a [Parameterized.Parameters] annotation
+ * which received `{0}`, `{1}` etc in the [Parameterized.Parameters.name] pattern
+ * where any of the parameters corresponded to an enum value.
  */
 @RunWith(Parameterized::class)
 class BadParameterizedTest(private val operation: Operation,

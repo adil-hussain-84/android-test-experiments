@@ -1,6 +1,5 @@
 package androidx.test.experiments.app
 
-import androidx.test.experiments.app.GoodParameterizedTest.Companion.data
 import androidx.test.experiments.app.GoodParameterizedTest2.Companion.data
 import org.junit.Assert.assertEquals
 import org.junit.Test

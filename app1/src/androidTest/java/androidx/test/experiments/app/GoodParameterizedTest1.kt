@@ -1,6 +1,6 @@
 package androidx.test.experiments.app
 
-import androidx.test.experiments.app.GoodParameterizedTest.Companion.data
+import androidx.test.experiments.app.GoodParameterizedTest1.Companion.data
 import org.junit.Assert.assertEquals
 import org.junit.Test
 import org.junit.runner.RunWith
@@ -15,10 +15,10 @@ import org.junit.runners.Parameterized
  * and therefore takes the default pattern of `"{index}"`.
  */
 @RunWith(Parameterized::class)
-class GoodParameterizedTest(private val operation: Operation,
-                            private val input1: Int,
-                            private val input2: Int,
-                            private val expectedAnswer: Int) {
+class GoodParameterizedTest1(private val operation: Operation,
+                             private val input1: Int,
+                             private val input2: Int,
+                             private val expectedAnswer: Int) {
 
     @Test
     fun addition() {

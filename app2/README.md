@@ -1,6 +1,6 @@
 # Demonstration of the 'connectedDebugAndroidTest' Gradle task hanging indefinitely
 
-This Android application module demonstrates that the mere presence of the `androidx.fragment:fragment-testing` library as a `debugImplementation` dependency
+This Android application module demonstrates that the mere presence of the [androidx.fragment:fragment-testing](https://maven.google.com/web/index.html#androidx.fragment:fragment-testing) library as a `debugImplementation` dependency
 causes the `connectedDebugAndroidTest` Gradle task to hang indefinitely.
 
 Run the `connectedDebugAndroidTest` Gradle task with the `androidx.fragment:fragment-testing` dependency present in the [build.gradle](build.gradle) file

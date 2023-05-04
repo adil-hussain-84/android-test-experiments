@@ -14,3 +14,5 @@ I have observed this behaviour in the following environments:
 2. Android Studio Electric Eel (2022.1.1 Patch 2) running on macOS Monterey 12.6.3.
 3. Android Studio Dolphin (2021.3.1 Patch 1) running on macOS Ventura 13.1.
 4. Android Studio Dolphin (2021.3.1 Patch 1) running on macOS Monterey 12.6.3.
+
+If you project actually requires the [androidx.fragment:fragment-testing](https://maven.google.com/web/index.html#androidx.fragment:fragment-testing) library, see [this](https://stackoverflow.com/a/75700331/1071320) StackOverflow answer for the fix.

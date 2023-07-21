@@ -1,4 +1,4 @@
-package androidx.test.experiments.app2
+package androidx.test.experiments.app
 
 import androidx.test.platform.app.InstrumentationRegistry
 import org.junit.Assert.assertEquals

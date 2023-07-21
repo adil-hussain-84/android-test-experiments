@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.tazkiyatech.experiments.app'
+    namespace 'androidx.test.experiments.app'
     compileSdk 34
 
     defaultConfig {
-        applicationId 'com.tazkiyatech.experiments.app3'
+        applicationId 'androidx.test.experiments.app3'
         minSdk 24
         targetSdk 34
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'

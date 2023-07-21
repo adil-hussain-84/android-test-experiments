@@ -1,8 +1,7 @@
-package com.tazkiyatech.experiments.app
+package androidx.test.experiments.app
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.tazkiyatech.experiments.app.R
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,7 +1,7 @@
-package androidx.test.experiments.app2
+package androidx.test.experiments.app
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 

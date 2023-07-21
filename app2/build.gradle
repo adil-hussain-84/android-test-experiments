@@ -3,7 +3,7 @@ apply plugin: 'org.jetbrains.kotlin.android'
 
 android {
     compileSdk 33
-    namespace 'androidx.test.experiments.app2'
+    namespace 'androidx.test.experiments.app'
 
     defaultConfig {
         applicationId 'androidx.test.experiments.app2'

@@ -10,4 +10,4 @@ See the [androidTest](src/androidTest/java/androidx/test/experiments/app) folder
 
 #### Links
 
-* See [Issue #975](https://github.com/android/android-test/issues/975) in the [android-test](https://github.com/android/android-test) GitHub repo for a description of the problem.
+* See [Issue #975](https://github.com/android/android-test/issues/975) in the [android-test](https://github.com/android/android-test) GitHub repo for a more detailed description of the problem.

@@ -17,17 +17,21 @@ android {
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            shrinkResources false
         }
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlin {
+        jvmToolchain(JavaVersion.VERSION_11.majorVersion.toInteger())
     }
 
     kotlinOptions {
-        jvmTarget = '1.8'
+        jvmTarget = JavaVersion.VERSION_11
     }
 
     lint {
@@ -36,14 +40,13 @@ android {
 }
 
 dependencies {
-    // NOTE 1: The mere presence of the 'fragment-testing' dependency causes the 'connectedDebugAndroidTest' Gradle task to hang indefinitely
-    // NOTE 2: Comment out the 'fragment-testing' dependency and then run the 'connectedDebugAndroidTest' Gradle task. You will see that it runs to completion perfectly fine.
-    // NOTE 3: The 'fragment-testing' library exists as an implementation (i.e. non-test) dependency because that is a requirement of the library. See the following issue for more information: https://issuetracker.google.com/issues/128612536
+    // NOTE 1: The presence of version '1.5.5' of the 'fragment-testing' library as an implementation (i.e. non-test) dependency causes the 'connectedDebugAndroidTest' Gradle task to hang indefinitely
+    // NOTE 2: The 'fragment-testing' library exists as an implementation (i.e. non-test) dependency because that is a requirement of the library. See the following issue for more information: https://issuetracker.google.com/issues/128612536
+    // NOTE 3: Comment out the 'fragment-testing' dependency below or upgrade it to version '1.6.0' and run the 'connectedDebugAndroidTest' Gradle task again. You will see that it runs to completion perfectly fine.
     debugImplementation 'androidx.fragment:fragment-testing:1.5.5'
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'com.google.android.material:material:1.9.0'
 
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'

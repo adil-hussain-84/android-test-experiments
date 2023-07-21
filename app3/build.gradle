@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    compileSdk 33
-    namespace 'androidx.test.experiments.app'
+    namespace 'com.tazkiyatech.experiments.app'
+    compileSdk 34
 
     defaultConfig {
-        applicationId 'androidx.test.experiments.app1'
+        applicationId 'com.tazkiyatech.experiments.app3'
         minSdk 24
-        targetSdk 33
+        targetSdk 34
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
         versionCode 1
         versionName '1.0'
@@ -32,8 +32,8 @@ android {
         jvmTarget = JavaVersion.VERSION_11
     }
 
-    testOptions {
-        execution 'ANDROIDX_TEST_ORCHESTRATOR'
+    lint {
+        abortOnError true
     }
 }
 
@@ -43,6 +43,4 @@ dependencies {
 
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-
-    androidTestUtil 'androidx.test:orchestrator:1.4.2'
 }

@@ -9,3 +9,5 @@ You will observe the tests all run to completion successfully.
 Then run the tests on an Android 14 device.
 You will observe that the tests which use the [ActivityScenario.launch](https://developer.android.com/reference/androidx/test/core/app/ActivityScenario#launch(java.lang.Class%3CA%3E)) method succeed
 whilst the tests which use the [ActivityScenario.launchActivityForResult](https://developer.android.com/reference/androidx/test/core/app/ActivityScenario#launchActivityForResult(java.lang.Class%3CA%3E)) method fail.
+
+I've raised an issue about this in the [android-test](https://github.com/android/android-test) GitHub repo. See [Issue #1871](https://github.com/android/android-test/issues/1871).

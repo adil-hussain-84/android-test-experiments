@@ -48,6 +48,7 @@ class MainActivityTest {
         onView(withId(R.id.textView)).check(matches(withText(R.string.hello_world)))
     }
 
+    /** This test fails when run on an Android 14 device. */
     @Test
     fun launchActivityForResult_with_activity_class() {
         // When.
@@ -57,6 +58,7 @@ class MainActivityTest {
         onView(withId(R.id.textView)).check(matches(withText(R.string.hello_world)))
     }
 
+    /** This test fails when run on an Android 14 device. */
     @Test
     fun launchActivityForResult_with_intent() {
         // Given.

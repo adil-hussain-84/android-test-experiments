@@ -17,3 +17,4 @@ dependencyResolutionManagement {
 include(":app1")
 include(":app2")
 include(":app3")
+include(":app4")

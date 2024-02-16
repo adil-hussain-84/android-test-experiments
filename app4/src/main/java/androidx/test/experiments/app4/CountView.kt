@@ -12,6 +12,7 @@ import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.test.experiments.app4.theme.AppTheme
@@ -28,9 +29,13 @@ fun CountView(modifier: Modifier = Modifier) {
         Text(text = "This is the count view")
         Text(
             text = "Count is $count",
+            modifier = Modifier.testTag("currentCountText"),
             style = MaterialTheme.typography.bodyLarge,
         )
-        Button(onClick = { count++ }) {
+        Button(
+            modifier = Modifier.testTag("incrementCountButton"),
+            onClick = { count++ },
+        ) {
             Text(text = "Increment count")
         }
     }

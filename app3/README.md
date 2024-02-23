@@ -11,3 +11,7 @@ You will observe that the tests which use the [ActivityScenario.launch](https://
 whilst the tests which use the [ActivityScenario.launchActivityForResult](https://developer.android.com/reference/androidx/test/core/app/ActivityScenario#launchActivityForResult(java.lang.Class%3CA%3E)) method fail.
 
 I've raised an issue about this in the [android-test](https://github.com/android/android-test) GitHub repo. See [Issue #1871](https://github.com/android/android-test/issues/1871).
+
+## Update
+
+See [this comment](https://github.com/android/android-test/issues/1871#issuecomment-1961510934) in the issue that I raised in the [android-test](https://github.com/android/android-test) GitHub repo for the fix.

@@ -1,4 +1,4 @@
-# Android Test Orchestrator parameterized tests bug
+# Demonstration of an Android Test Orchestrator parameterized tests bug
 
 This Android application module demonstrated a bug in the AndroidX test libraries which is now resolved.
 

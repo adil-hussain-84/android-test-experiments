@@ -45,12 +45,12 @@ android {
     }
 
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.5.9"
+        kotlinCompilerExtensionVersion = "1.5.10"
     }
 }
 
 dependencies {
-    val composeBomVersion = "2024.02.00"
+    val composeBomVersion = "2024.02.01"
 
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     debugImplementation("androidx.compose.ui:ui-tooling")

@@ -2,17 +2,19 @@
 
 This Android application project demonstrates how to write UI tests for an Activity that has a [Composable][3] as its content.
 
-The application itself just displays a simple [Button][4] and [Text][5], as follows:
+The application itself simply displays a [Button][4] and [Text][5], as follows:
 
 <img src="Screenshot.png" alt="Screenshot of application" width=25%>
 
 When the Button is tapped, a counter is incremented and the Text displays the current value of the counter.
 That's it.
 
-You will find two UI test classes for this application:
+You will find two UI test classes for this application, as follows:
 
-1. [CountViewTest][1] – This class tests the Composable in isolation by means of the [ComposeContentTestRule][6] class.
-2. [CountActivityTest][2] – This class tests the Activity as a whole by means of the [ActivityScenarioRule][7] and [ComposeContentTestRule][6] classes.
+|                        |                                                                                                                             |
+|------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+| [CountViewTest][1]     | This class tests the Composable in isolation by means of the [ComposeContentTestRule][6] class.                             |
+| [CountActivityTest][2] | This class tests the Activity as a whole by means of the [ActivityScenarioRule][7] and [ComposeContentTestRule][6] classes. |
 
 [1]: src/androidTest/java/androidx/test/experiments/app4/CountViewTest.kt
 [2]: src/androidTest/java/androidx/test/experiments/app4/CountActivityTest.kt

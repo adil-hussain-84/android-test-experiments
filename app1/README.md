@@ -13,7 +13,7 @@ See the [androidTest][3] folder for some parameterized test classes which demons
 * See [Issue #975][4] in the [android-test][5] GitHub repo for a more detailed description of the problem.
 
 [1]: https://junit.org/junit4/javadoc/4.13/org/junit/runners/Parameterized.Parameters.html#name
-[2]: https://developer.android.com/training/testing/junit-runner#using-android-test-orchestrator
+[2]: https://developer.android.com/training/testing/instrumented-tests/androidx-test-libraries/runner#use-android
 [3]: src/androidTest/java/androidx/test/experiments/app
 [4]: https://github.com/android/android-test/issues/975
 [5]: https://github.com/android/android-test
